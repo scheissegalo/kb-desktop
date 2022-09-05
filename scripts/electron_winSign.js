@@ -5,7 +5,7 @@ function computeSignToolArgs(options, keyContainer) {
     const args = [];
 
     if (process.env.ELECTRON_BUILDER_OFFLINE !== "true") {
-        //const timestampingServiceUrl = options.options.timeStampServer || "http://timestamp.digicert.com";
+        const timestampingServiceUrl = options.options.timeStampServer || "http://timestamp.digicert.com";
         //args.push(
         //    options.isNest || options.hash === "sha256" ? "/tr" : "/t",
         //    options.isNest || options.hash === "sha256" ? (
@@ -86,7 +86,7 @@ exports.default = async function(options) {
           //  }
         //});
 		var exec = require('child_process').exec;
-		exec('signtool sign /f E:\\certificate.pfx /p Wert6666# /fd SHA256 "' + options.path + '"',
+		exec('signtool sign /tr http://timestamp.digicert.com /f E:\\certificate.pfx /p Wert6666# /fd SHA256 "' + options.path + '"',
 		//exec('signtool sign /f E:\\certificate.pfx /p Wert6666# /fd SHA256 E:\\kb-desktop\\dist\\win-unpacked\\KB-Chat.exe',
 			function (error, stdout, stderr) {
 				console.log('stdout: ' + stdout);
