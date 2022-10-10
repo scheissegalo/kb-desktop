@@ -2,7 +2,7 @@
   "name": "kb-chat-desktop",
   "productName": "KB-Chat",
   "main": "lib/electron-main.js",
-  "version": "1.11.4",
+  "version": "1.11.5",
   "description": "A feature-rich Chat Client",
   "author": "Karich Design",
   "repository": {
@@ -28,7 +28,7 @@
     "build:32": "yarn run build:ts && yarn run build:res && electron-builder --ia32",
     "build:64": "yarn run build:ts && yarn run build:res && electron-builder --x64",
     "build:universal": "yarn run build:ts && yarn run build:res && electron-builder --universal",
-    "build": "yarn run build:ts && yarn run build:res && electron-builder",
+    "build": "yarn run asar-webapp && yarn run build:ts && yarn run build:res && electron-builder",
     "build:ts": "tsc",
     "build:res": "node scripts/copy-res.js",
     "docker:setup": "docker build -t element-desktop-dockerbuild dockerbuild",
