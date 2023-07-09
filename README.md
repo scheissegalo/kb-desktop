@@ -5,10 +5,10 @@
 [![Vulnerabilities](https://sonarcloud.io/api/project_badges/measure?project=element-desktop&metric=vulnerabilities)](https://sonarcloud.io/summary/new_code?id=element-desktop)
 [![Bugs](https://sonarcloud.io/api/project_badges/measure?project=element-desktop&metric=bugs)](https://sonarcloud.io/summary/new_code?id=element-desktop)
 
-Element Desktop
+KB Chat Desktop
 ===============
 
-Element Desktop is a Matrix client for desktop platforms with KB-Chat Web at its core.
+KB Chat Desktop is a Matrix client for desktop platforms with KB-Chat Web at its core.
 
 First Steps
 ===========
