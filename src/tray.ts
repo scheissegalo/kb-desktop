@@ -54,7 +54,8 @@ interface IConfig {
 function getUuid(): string {
     // The uuid field is optional and only needed on unsigned Windows packages where the executable path changes
     // The hardcoded uuid is an arbitrary v4 uuid generated on https://www.uuidgenerator.net/version4
-    return global.vectorConfig["uuid"] || "eba84003-e499-4563-8e9d-166e34b5cc25";
+    //return global.vectorConfig["uuid"] || "eba84003-e499-4563-8e9d-166e34b5cc25";
+    return global.vectorConfig["uuid"] || "65bd9b54-3a82-4ce9-874e-bcf50ddec849";
 }
 
 export function create(config: IConfig): void {
@@ -72,7 +73,8 @@ export function create(config: IConfig): void {
         guid = uuidv5(`${app.getName()}-${app.getPath("userData")}`, getUuid());
     }
 
-    trayIcon = new Tray(defaultIcon, guid);
+    //trayIcon = new Tray(defaultIcon, guid);
+    trayIcon = new Tray(defaultIcon);
     trayIcon.setToolTip(config.brand);
     initApplicationMenu();
     trayIcon.on("click", toggleWin);
