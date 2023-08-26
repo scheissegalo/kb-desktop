@@ -3391,7 +3391,7 @@ ejs@^3.1.8:
 
 electron-build-env@^0.2.0:
   version "0.2.0"
-  resolved "https://registry.npmjs.org/electron-build-env/-/electron-build-env-0.2.0.tgz"
+  resolved "https://registry.yarnpkg.com/electron-build-env/-/electron-build-env-0.2.0.tgz#5649ee3e5fd006e267086caa945b77a1fa220b92"
   integrity sha512-L431TbXtXe6iw3ko7ITr/qCu+jumVKLAhCDyhqfab6421LGlawVcT88Ws/DHR57+1lkLN1POQqwNOkjPwQJQmQ==
   dependencies:
     commander "^2.9.0"
@@ -5584,7 +5584,7 @@ matcher@^3.0.0:
 
 matrix-seshat@^3.0.1:
   version "3.0.1"
-  resolved "https://registry.npmjs.org/matrix-seshat/-/matrix-seshat-3.0.1.tgz"
+  resolved "https://registry.yarnpkg.com/matrix-seshat/-/matrix-seshat-3.0.1.tgz#f523ddc1c23cb8cc434509ec7d49770bdaf53330"
   integrity sha512-fkcUydhDP3nl0oajH8j/Hk1QSkQpar5V9rTaljxYpn7rD5wjqK2gXew49BJym1rvjuYsIrU0k+UNEUVFXQ5IGA==
 
 matrix-web-i18n@^2.0.0:

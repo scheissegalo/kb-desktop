@@ -1,8 +1,8 @@
 {
     "name": "n-app-desktop",
-    "productName": "N-APP",
+    "productName": "N APP",
     "main": "lib/electron-main.js",
-    "version": "1.11.41",
+    "version": "1.11.45",
     "description": "A feature-rich client for Matrix.org",
     "author": "Karich.Design",
     "homepage": "https://north-industries.com",
@@ -44,7 +44,7 @@
         "build:32": "yarn run build:ts && yarn run build:res && electron-builder --ia32",
         "build:64": "yarn run build:ts && yarn run build:res && electron-builder --x64",
         "build:universal": "yarn run build:ts && yarn run build:res && electron-builder --universal",
-        "build": "yarn run build:ts && yarn run build:res && electron-builder",
+        "build": "yarn run asar-webapp && yarn run build:ts && yarn run build:res && electron-builder",
         "build:ts": "tsc",
         "build:res": "ts-node scripts/copy-res.ts",
         "docker:setup": "docker build -t element-desktop-dockerbuild dockerbuild",
@@ -128,7 +128,7 @@
         "@types/node": "16.18.39"
     },
     "build": {
-        "appId": "im.riot.app",
+        "appId": "im.rio.app",
         "asarUnpack": "**/*.node",
         "files": [
             "package.json",

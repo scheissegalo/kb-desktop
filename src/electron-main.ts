@@ -79,7 +79,7 @@ if (userDataPathInProtocol) {
         newUserDataPath += "-" + argv["profile"];
     }
     const newUserDataPathExists = isRealUserDataDir(newUserDataPath);
-    let oldUserDataPath = path.join(app.getPath("appData"), app.getName().replace("Element", "Riot"));
+    let oldUserDataPath = path.join(app.getPath("appData"), app.getName().replace("N-Chat", "Riot"));
     if (argv["profile"]) {
         oldUserDataPath += "-" + argv["profile"];
     }
